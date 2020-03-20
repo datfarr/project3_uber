@@ -209,7 +209,8 @@ header
     font-size: 15px
     font-weight: 300
     text-align: justify
-    height: 180px
+    padding: 0
+    
 
     h3
       line-height: 21px
@@ -220,15 +221,17 @@ header
   .reason_items
     flex-direction: column
     display: flex
-    justify-content: space-around
-    align-items: center
+    justify-content: space-around 
+    
+    
 
   .reason_block
     display: flex
     align-items: center
     justify-content: center
-    margin-top: 30px
-    height: 180px
+    padding-top: 20px
+    
+    
 
 .mobile
     min-height: 864px
@@ -419,12 +422,12 @@ footer
         top: 50%
         left: 50%
         transform: translate(-50%, -50%)
-  a
-    color: #fff
-    height: 33px
-    margin-right: 9px
-    &:visited
+    a
       color: #fff
+      height: 33px
+      padding-right: 9px
+      &:visited
+        color: #fff
         
         
         
@@ -432,38 +435,44 @@ footer
     text-align: center
     margin: 32px 0 31px 0
     
+    
     &_1
       display: flex
-      justify-content: space-around
+      justify-content: center
       color: #070716
-      font-size: 15px
+      
       font-weight: 300
       text-transform: uppercase
+      padding-bottom: 10px
       a 
-        margin-right: 5px
+        padding-right: 25px
+        font-size: 15px
         color: #070716
         &:visited
           color: #b1066a
     &_2
-      margin-top: 15px
-      display: flex
-      justify-content: space-around
       
-      font-size: 11px
+      display: flex
+      justify-content: center
+      padding-bottom: 10px
+      
       font-weight: 300
       text-transform: uppercase
       a 
-        margin-right: 8px
+        padding-right: 10px
         color: #999999
+        font-size: 11px
         &:visited
           color: #cfdd08
     &_3
-      margin-top: 21px
-      font-size: 11px
+      
+      
       font-weight: 400
       text-transform: uppercase
+      padding-bottom: 10px
       a
         color: #1fbad6
+        font-size: 12px
         &:visited
           color: #a931e0
   &::before
