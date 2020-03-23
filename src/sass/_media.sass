@@ -26,8 +26,7 @@
             &_subtitle
                 font-size: 22px
 footer   
-    .footer_app
-        justify-content: space-between
+    
     .footer_links
         &_1
             a
@@ -90,6 +89,13 @@ footer
             padding-top: 70px
             &_subtitle
                 font-size: 17px
+    footer
+        .footer_app
+           flex-direction: column
+           justify-content: space-between
+           padding: 25px 56px 31px 0
+           a
+               text-align: right
 
 @media (max-width: 1081px)
     footer
@@ -104,15 +110,221 @@ footer
             &_3
                 a
                    font-size: 8px 
-            
-            
-            
-            
 
+@media (max-width: 818px)
+    footer
+        .footer_links
+            padding: 0px
+            &_1
+                a
+                    font-size: 9px
+            &_2
+                a
+                    font-size: 7px
+            &_3
+                a
+                   font-size: 7px
+@media (max-width: 767px)
+    nav
+        height: 40px
+    .menu
+        position: fixed
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        top: 0 
+        left: -100%
+        width: 50%
+        height: 100%
+        padding: 20px 15px
+        background-color: rgba(0,0,0, .8)
+        transition: 0.6s all
+        &_active
+            left: 0
+        &_item
+            padding-right: 0
+            border: none
+            margin-top: 10px
+        &_link
+            font-size: 20px
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 26px
+        height: 12px
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: #ffffff
+            margin-bottom: 2px
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+    .subheader
+        margin-top: 40px
+        .xs-hidden
+            display: none
+        .xs-visible
+            display: block
+        &_phone
+            display: block
+            margin-top: 10px
+            font-size: 18px
+            font-weight: 400
+            text-transform: uppercase
+            text-align: center
+        &_btn
+            display: block
+            width: 160px
+            height: 42px
+            margin: 10px auto
+
+    footer
+        .footer_social
+            flex-wrap: wrap
+            justify-content: start
+            max-height: 120px
+            width: 20%
+            padding: 26px 0 11px 23px
+        .footer_links
+            width: 60%
+        .footer_app
+            width: 20%
+            padding: 25px 33px 29px 0
             
             
-            
-            
-            
-            
+@media (max-width: 575px)
+
+    
+    .subheader
+        height: 60px
         
+        &_official
+            display: none
+        &_logo
+            margin-top: 15px
+        &_phone
+            font-size: 12px
+            text-transform: uppercase
+        &_btn
+            width: 110px
+            height: 22px
+            font-size: 10px 
+            margin-top: 7px
+    .promo
+        min-height: 400px
+        padding: 132px 0 35px 0
+        &_descr
+            display: none
+        &_btn
+            margin-top: 53px
+    .menu
+        width: 80%
+        &_link
+            font-size: 17px
+    .reasons
+        padding-top: 33px
+        .reason_block
+            padding-top: 35px
+            height: 100%
+        .titletext
+            font-size: 25px
+            line-height: 30px
+            padding-bottom: 0px
+        .reason_text
+            h3
+                text-align: center
+    .mobile
+        .titletext
+            font-size: 25px
+            line-height: 30px
+            padding-bottom: 0px
+        padding-bottom: 26px
+    .ubercar
+        .titletext_1
+            font-size: 32px
+            line-height: 39px
+    .require
+        padding: 68px 0 17px 0
+        .titletext
+            line-height: 35px  
+            font-size: 34px
+            padding-bottom: 0px
+    .around_world
+        padding: 28px 0
+        height: 550px
+        .textlink
+            bottom: 23px;
+            a
+                line-height: 18px
+    footer
+        height: 100%
+        &::before,&::after
+            
+            content: none
+            display: none
+        
+        .footer_social
+            flex-wrap: wrap;
+            justify-content: start
+            max-height: 120px
+            width: 30%
+            padding: 22px 0px 0px 8px
+            &::after
+                content: ''
+                display: block
+                position: absolute
+                left: 90%
+                
+                background-color: #1fbad6
+                width: 2px
+                height: 90px
+        .footer_links
+            margin: 22px 0 0 0    
+            width: 35%
+            &_1
+                
+                flex-wrap: wrap
+                justify-content: space-around
+                a
+                    padding-right: 0px
+                    
+            &_2
+                flex-wrap: wrap
+                justify-content: space-around
+                a
+                    padding-right: 0px
+            &_3
+                flex-wrap: wrap
+                justify-content: space-around
+                a
+                    padding-right: 0px
+        .footer_app
+            &::before
+                content: ''
+                display: block
+                position: absolute
+                right: 90%
+                background-color: #1fbad6
+                width: 2px
+                height: 90px
+            padding: 22px 10px 0px 0px
+            width: 32%
+            align-items: flex-end
+            justify-content: start
+            a
+                text-align: right
+            img
+                width: 78%
+                height: 83%   

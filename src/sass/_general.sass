@@ -7,6 +7,8 @@ nav
   right: auto
   top: 0
   width: 100% !important
+.hamburger
+  display: none
 
 header
   position: relative
@@ -35,6 +37,9 @@ header
   background-color: rgba(0, 0, 0, 0.6)
   position: absolute
   width: 100%
+
+  .xs-visible
+    display: none
 
   &_logo
     display: block
@@ -80,6 +85,8 @@ header
     background-image: linear-gradient(to top, $circle-blue 0%, #4ce2ff 100%)
     border-radius: 4px
     @include  btn_hover
+
+
 
 .promo
   min-height: 800px
@@ -309,13 +316,14 @@ header
           
         
 .ubercar
-  padding: 57px 0 138px 0
+  padding: 57px 0 0 0
   background: url('../img/bg_ubercar.png') center (center / cover) no-repeat 
   .car
     margin: 56px auto 0 auto
     .car_img
       display: block
       margin: auto
+      width: 100%
     .resume
     text-align: center
     color: #222222
@@ -399,6 +407,7 @@ footer
     padding: 52px 56px 0 0
     display: flex
     justify-content: flex-end
+    width: 100%
     a
       margin-left: 8px
       height: 26px
@@ -410,6 +419,7 @@ footer
     padding: 51px 0 0 23px
     display: flex
     justify-content: flex-start
+    width: 100%
     .link_icon
       position: relative
       
@@ -434,6 +444,7 @@ footer
   .footer_links
     text-align: center
     margin: 32px 0 31px 0
+    width: 100%
     
     
     &_1
